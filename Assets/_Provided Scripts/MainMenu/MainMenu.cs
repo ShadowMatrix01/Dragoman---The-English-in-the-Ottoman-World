@@ -56,7 +56,11 @@ public class MainMenu : Menu
 
     public void OnClickExit()
     {
+# if UNITY_EDITOR
+        EditorApplication.isPlaying = false;
+#else
         Application.Quit();
+#endif
     }
 
     private void DisableMenuButtons()

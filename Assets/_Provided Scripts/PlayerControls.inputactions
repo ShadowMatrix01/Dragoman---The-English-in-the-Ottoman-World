@@ -1,4 +1,5 @@
 {
+    "version": 1,
     "name": "PlayerControls",
     "maps": [
         {
@@ -36,7 +37,7 @@
                     "name": "Interact1",
                     "type": "Button",
                     "id": "0b931115-538b-4a83-8f0e-478e8d338dd2",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
