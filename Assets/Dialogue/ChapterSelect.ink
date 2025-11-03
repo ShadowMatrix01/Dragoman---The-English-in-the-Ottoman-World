@@ -18,6 +18,7 @@ You continue on!
 # speaker:You # portrait:portrait55 # layout:left
 Portrait on the left, did it switch?! 
 You continue on! Yahoo! 
+You have added more text!
 +[Onwards!]
 ~scenechange = 2
 ->DONE
