@@ -1,5 +1,9 @@
 using UnityEngine;
 using System.Collections;
+<<<<<<< HEAD
+=======
+using Cysharp.Threading.Tasks;
+>>>>>>> origin/main
 
 
 namespace TMPro.Examples
@@ -17,7 +21,12 @@ namespace TMPro.Examples
 
         void Start()
         {
+<<<<<<< HEAD
             StartCoroutine(RevealCharacters(m_TextComponent));
+=======
+            //StartCoroutine(RevealCharacters(m_TextComponent));
+            RevealCharacters(m_TextComponent).Forget();
+>>>>>>> origin/main
             //StartCoroutine(RevealWords(m_TextComponent));
         }
 
@@ -45,7 +54,11 @@ namespace TMPro.Examples
         /// Method revealing the text one character at a time.
         /// </summary>
         /// <returns></returns>
+<<<<<<< HEAD
         IEnumerator RevealCharacters(TMP_Text textComponent)
+=======
+        /*IEnumerator RevealCharacters(TMP_Text textComponent)
+>>>>>>> origin/main
         {
             textComponent.ForceMeshUpdate();
 
@@ -74,6 +87,39 @@ namespace TMPro.Examples
 
                 yield return null;
             }
+<<<<<<< HEAD
+=======
+        }*/
+        private async UniTask RevealCharacters(TMP_Text textComponent)
+        {
+            textComponent.ForceMeshUpdate();
+
+            TMP_TextInfo textInfo = textComponent.textInfo;
+
+            int totalVisibleCharacters = textInfo.characterCount; // Get # of Visible Character in text object
+            int visibleCount = 0;
+
+            while (true)
+            {
+                if (hasTextChanged)
+                {
+                    totalVisibleCharacters = textInfo.characterCount; // Update visible character count.
+                    hasTextChanged = false;
+                }
+
+                if (visibleCount > totalVisibleCharacters)
+                {
+                    await UniTask.WaitForSeconds(1.0f);
+                    visibleCount = 0;
+                }
+
+                textComponent.maxVisibleCharacters = visibleCount; // How many characters should TextMeshPro display?
+
+                visibleCount += 1;
+
+                await UniTask.Yield();
+            }
+>>>>>>> origin/main
         }
 
 
@@ -118,4 +164,8 @@ namespace TMPro.Examples
         }
 
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/main

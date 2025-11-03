@@ -5,6 +5,10 @@ using TMPro;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+<<<<<<< HEAD
+=======
+using Cysharp.Threading.Tasks;
+>>>>>>> origin/main
 
 public class DialogueManager : MonoBehaviour, IDataPersistence
 {
@@ -129,7 +133,11 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         ContinueStory();
     }
 
+<<<<<<< HEAD
     public IEnumerator ExitDialogueMode()
+=======
+    /*public IEnumerator ExitDialogueMode()
+>>>>>>> origin/main
     {
         yield return new WaitForSeconds(0.2f);
 
@@ -144,6 +152,26 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         {
             EventSystem.current.SetSelectedGameObject(null);
         }
+<<<<<<< HEAD
+=======
+    }*/
+
+    public async UniTask ExitDialogueMode()
+    {
+        await UniTask.WaitForSeconds(0.2f);
+
+        dialogueVariables.StopListening(currentStory);
+
+        dialogueIsPlaying = false;
+        dialoguePanel.SetActive(false);
+        dialogueText.text = "";
+
+        // Clear the EventSystem's selected object
+        if (EventSystem.current != null)
+        {
+            EventSystem.current.SetSelectedGameObject(null);
+        }
+>>>>>>> origin/main
     }
 
     private void ContinueStory()
@@ -159,7 +187,12 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
             //makes sure if next line is blank because of external fuctions or tags at the end, it wont display an empty box
             if (nextLine.Equals("") && !currentStory.canContinue)
             {
+<<<<<<< HEAD
                 StartCoroutine(ExitDialogueMode());
+=======
+                //StartCoroutine(ExitDialogueMode());
+                ExitDialogueMode().Forget();
+>>>>>>> origin/main
             }
             //if not , will handle tags as normal
             else
@@ -171,7 +204,12 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         }
         else
         {
+<<<<<<< HEAD
             StartCoroutine(ExitDialogueMode());
+=======
+            //StartCoroutine(ExitDialogueMode());
+            ExitDialogueMode().Forget();
+>>>>>>> origin/main
         }
     }
 
@@ -291,10 +329,18 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
             choices[i].gameObject.SetActive(false);
         }
 
+<<<<<<< HEAD
         StartCoroutine(SelectFirstChoice());
     }
 
     private IEnumerator SelectFirstChoice()
+=======
+        //StartCoroutine(SelectFirstChoice());
+        SelectFirstChoice().Forget();
+    }
+
+    /*private IEnumerator SelectFirstChoice()
+>>>>>>> origin/main
     {
         // Only set the selected object if dialogue is playing
         if (dialogueIsPlaying)
@@ -305,6 +351,21 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
             yield return new WaitForEndOfFrame();
             EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
         }
+<<<<<<< HEAD
+=======
+    }*/
+    private async UniTask SelectFirstChoice()
+    {
+        // Only set the selected object if dialogue is playing
+        if (dialogueIsPlaying)
+        {
+            // Event System requires we clear it first, then wait
+            // for at least one frame before we set the current selected object.
+            EventSystem.current.SetSelectedGameObject(null);
+            await UniTask.WaitForEndOfFrame();
+            EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
+        }
+>>>>>>> origin/main
     }
 
     public void MakeChoice(int choiceIndex)
@@ -333,4 +394,8 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
 
    
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/main

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+using Cysharp.Threading.Tasks;
+>>>>>>> origin/main
 using System.Collections;
 using UnityEngine;
 
@@ -80,13 +84,22 @@ public class TeleportTrigger : MonoBehaviour
                 if (player.IsInteract1Triggered())
                 {
                     // Start the teleport coroutine
+<<<<<<< HEAD
                     StartCoroutine(TeleportWithFade(other));
+=======
+                    //StartCoroutine(TeleportWithFade(other));
+                    TeleportWithFade(other).Forget();
+>>>>>>> origin/main
                 }
             }
         }
     }
 
+<<<<<<< HEAD
     private IEnumerator TeleportWithFade(Collider2D playerCollider)
+=======
+    /*private IEnumerator TeleportWithFade(Collider2D playerCollider)
+>>>>>>> origin/main
     {
         isTeleporting = true; // Set the flag to true to prevent multiple triggers
 
@@ -116,5 +129,39 @@ public class TeleportTrigger : MonoBehaviour
         }
 
         isTeleporting = false; // Reset the flag after teleportation is complete
+<<<<<<< HEAD
+=======
+    }*/
+    private async UniTask TeleportWithFade(Collider2D playerCollider)
+    {
+        isTeleporting = true; // Set the flag to true to prevent multiple triggers
+
+        // Play the AudioSource if it exists (at the start of the fade)
+        if (audioSource != null)
+        {
+            audioSource.Play();
+        }
+
+        // Fade to black
+        if (screenFader != null)
+        {
+            await screenFader.FadeOut();
+        }
+
+        // Wait for the specified time before moving the player (to give fade-out enough time)
+        await UniTask.WaitForSeconds(waitTime);
+
+        // Now that the fade-out time has passed, teleport the player
+        playerCollider.transform.position = teleportPosition;
+        Debug.Log("Player teleported to: " + teleportPosition);
+
+        // Fade back in
+        if (screenFader != null)
+        {
+            await screenFader.FadeIn();
+        }
+
+        isTeleporting = false; // Reset the flag after teleportation is complete
+>>>>>>> origin/main
     }
 }
