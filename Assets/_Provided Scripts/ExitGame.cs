@@ -11,6 +11,15 @@ public class ExitGame : MonoBehaviour
 {
     public void OnClickExit()
     {
+               
+                Application.Quit();
+
+
+      /* #if UNITY_EDITOR
+         EditorApplication.isPlaying = false;
+         #else 
         Application.Quit();
+        #endif 
+        */
     }
 }
