@@ -2,7 +2,10 @@ using System.Collections;
 using UnityEngine;
 using Ink.Runtime;
 using UnityEngine.SceneManagement;
+<<<<<<< HEAD
+=======
 using Cysharp.Threading.Tasks;
+>>>>>>> origin/main
 
 public class ChangeSceneInk : MonoBehaviour
 {
@@ -34,12 +37,20 @@ public class ChangeSceneInk : MonoBehaviour
 
         if (scenechangetrigger == scenechangenum)
         {
+<<<<<<< HEAD
+            StartCoroutine(ChangeSceneRoutine());
+        }
+    }
+
+    private IEnumerator ChangeSceneRoutine()
+=======
             //StartCoroutine(ChangeSceneRoutine());
             ChangeSceneRoutine().Forget();
         }
     }
 
     /*private IEnumerator ChangeSceneRoutine()
+>>>>>>> origin/main
     {
         sceneChanging = true;
 
@@ -54,6 +65,8 @@ public class ChangeSceneInk : MonoBehaviour
         DialogueManager.GetInstance().SaveData(gameData);
 
         SceneManager.LoadScene(sceneID);
+<<<<<<< HEAD
+=======
     }*/
     private async UniTask ChangeSceneRoutine()
     {
@@ -71,5 +84,6 @@ public class ChangeSceneInk : MonoBehaviour
         DialogueManager.GetInstance().SaveData(gameData);
 
         SceneManager.LoadScene(sceneID);
+>>>>>>> origin/main
     }
 }

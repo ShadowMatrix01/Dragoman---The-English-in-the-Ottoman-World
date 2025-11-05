@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
+<<<<<<< HEAD
+=======
 using Cysharp.Threading.Tasks;
+>>>>>>> origin/main
 
 
 namespace TMPro.Examples
@@ -36,8 +39,12 @@ namespace TMPro.Examples
 
         void Start()
         {
+<<<<<<< HEAD
+            StartCoroutine(AnimateVertexColors());
+=======
             //StartCoroutine(AnimateVertexColors());
             AnimateVertexColors().Forget();
+>>>>>>> origin/main
         }
 
 
@@ -51,7 +58,11 @@ namespace TMPro.Examples
         /// Method to animate vertex colors of a TMP Text object.
         /// </summary>
         /// <returns></returns>
+<<<<<<< HEAD
+        IEnumerator AnimateVertexColors()
+=======
         /*IEnumerator AnimateVertexColors()
+>>>>>>> origin/main
         {
 
             // We force an update of the text object since it would only be updated at the end of the frame. Ie. before this code is executed on the first frame.
@@ -181,6 +192,12 @@ namespace TMPro.Examples
 
                 yield return new WaitForSeconds(0.1f);
             }
+<<<<<<< HEAD
+        }
+
+    }
+}
+=======
         }*/
         private async UniTask AnimateVertexColors()
         {
@@ -315,3 +332,4 @@ namespace TMPro.Examples
         }
     }
 }
+>>>>>>> origin/main

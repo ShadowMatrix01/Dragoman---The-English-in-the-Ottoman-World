@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
+<<<<<<< HEAD
+=======
 using Cysharp.Threading.Tasks;
+>>>>>>> origin/main
 
 
 namespace TMPro.Examples
@@ -25,8 +28,12 @@ namespace TMPro.Examples
 
         void Start()
         {
+<<<<<<< HEAD
+            StartCoroutine(WarpText());
+=======
             //StartCoroutine(WarpText());
             WarpText().Forget();
+>>>>>>> origin/main
         }
 
 
@@ -45,7 +52,11 @@ namespace TMPro.Examples
         /// </summary>
         /// <param name="textComponent"></param>
         /// <returns></returns>
+<<<<<<< HEAD
+        IEnumerator WarpText()
+=======
         /*IEnumerator WarpText()
+>>>>>>> origin/main
         {
             VertexCurve.preWrapMode = WrapMode.Clamp;
             VertexCurve.postWrapMode = WrapMode.Clamp;
@@ -155,6 +166,8 @@ namespace TMPro.Examples
 
                 yield return null; // new WaitForSeconds(0.025f);
             }
+<<<<<<< HEAD
+=======
         }*/
         private async UniTask WarpText()
         {
@@ -266,6 +279,7 @@ namespace TMPro.Examples
 
                 await UniTask.Yield();
             }
+>>>>>>> origin/main
         }
     }
 }

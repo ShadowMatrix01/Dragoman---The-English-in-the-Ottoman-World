@@ -1,4 +1,7 @@
+<<<<<<< HEAD
+=======
 using Cysharp.Threading.Tasks;
+>>>>>>> origin/main
 using System.Collections;
 using UnityEngine;
 
@@ -56,13 +59,21 @@ public class TeleportAuto : MonoBehaviour
             if (player != null && !isTeleporting) // Prevent teleportation if already in process
             {
                 // Start the teleport coroutine
+<<<<<<< HEAD
+                StartCoroutine(TeleportWithFade(other));
+=======
                 //StartCoroutine(TeleportWithFade(other));
                 TeleportWithFade(other).Forget();
+>>>>>>> origin/main
             }
         }
     }
 
+<<<<<<< HEAD
+    private IEnumerator TeleportWithFade(Collider2D playerCollider)
+=======
     /*private IEnumerator TeleportWithFade(Collider2D playerCollider)
+>>>>>>> origin/main
     {
         isTeleporting = true; // Set the flag to true to prevent multiple triggers
 
@@ -92,6 +103,8 @@ public class TeleportAuto : MonoBehaviour
         }
 
         isTeleporting = false; // Reset the flag after teleportation is complete
+<<<<<<< HEAD
+=======
     }*/
     private async UniTask TeleportWithFade(Collider2D playerCollider)
     {
@@ -123,5 +136,6 @@ public class TeleportAuto : MonoBehaviour
         }
 
         isTeleporting = false; // Reset the flag after teleportation is complete
+>>>>>>> origin/main
     }
 }

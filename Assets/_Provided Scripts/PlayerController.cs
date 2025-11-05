@@ -7,7 +7,10 @@ using UnityEngine.InputSystem;
 using UnityEngine.Windows;
 using Ink.Runtime;
 using UnityEngine.InputSystem.XR;
+<<<<<<< HEAD
+=======
 using Cysharp.Threading.Tasks;
+>>>>>>> origin/main
 
 public class PlayerController : MonoBehaviour, IDataPersistence
 {
@@ -120,7 +123,11 @@ public class PlayerController : MonoBehaviour, IDataPersistence
     }
 
 
+<<<<<<< HEAD
+    private IEnumerator ClimbLedge()
+=======
     /*private IEnumerator ClimbLedge()
+>>>>>>> origin/main
     {
         // Get the player's collider and the ground collider
         Collider2D playerCollider = GetComponent<Collider2D>();
@@ -161,6 +168,8 @@ public class PlayerController : MonoBehaviour, IDataPersistence
 
         // Reset the animator parameter
         animator.SetBool("canClimb", false);
+<<<<<<< HEAD
+=======
     }*/
     private async UniTask ClimbLedge()
     {
@@ -203,6 +212,7 @@ public class PlayerController : MonoBehaviour, IDataPersistence
 
         // Reset the animator parameter
         animator.SetBool("canClimb", false);
+>>>>>>> origin/main
     }
 
     private void Sprint() //new//
@@ -257,8 +267,12 @@ public class PlayerController : MonoBehaviour, IDataPersistence
         if (canClimb)
         {
             animator.SetBool("canClimb", true);
+<<<<<<< HEAD
+            StartCoroutine(ClimbLedge());
+=======
             //StartCoroutine(ClimbLedge());
             ClimbLedge().Forget();
+>>>>>>> origin/main
         }
         else
         {
@@ -418,4 +432,8 @@ public class PlayerController : MonoBehaviour, IDataPersistence
     {
         return playerControls.Travel.Interact1.triggered;
     } //for the teleporttrigger script
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/main

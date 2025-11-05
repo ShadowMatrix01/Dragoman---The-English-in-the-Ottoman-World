@@ -66,5 +66,9 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj",
     },
+<<<<<<< HEAD
+    "dotnet.defaultSolution": "GMSTGameFile.sln"
+=======
     "dotnet.defaultSolution": "CCSU_GMST100_GameProject.sln"
+>>>>>>> origin/main
 }
