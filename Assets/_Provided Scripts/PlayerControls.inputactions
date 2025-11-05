@@ -59,7 +59,7 @@
                     "name": "Interact3",
                     "type": "Button",
                     "id": "0c5de74f-4c83-4d0d-a9a1-6b8ffd0f22f6",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -68,7 +68,7 @@
                     "name": "Interact4",
                     "type": "Button",
                     "id": "37d6bf9d-0074-4391-8725-c9aeb965cfb3",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -564,7 +564,7 @@
                     "name": "Cancel",
                     "type": "Button",
                     "id": "1af499e6-44df-4841-a20f-1b6ab1afe0ad",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false

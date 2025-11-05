@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-using Cysharp.Threading.Tasks;
->>>>>>> origin/main
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -23,13 +19,8 @@ public class MainMenu : Menu
     private void Start()
     {
         DisableButtonsDependingOnData();
-<<<<<<< HEAD
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-=======
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
->>>>>>> origin/main
     }
 
     private void DisableButtonsDependingOnData()
@@ -60,35 +51,12 @@ public class MainMenu : Menu
         DataPersistenceManager.instance.SaveGame();
         // load the next scene - which will in turn load the game because of 
         // OnSceneLoaded() in the DataPersistenceManager
-<<<<<<< HEAD
         SceneManager.LoadSceneAsync(DataPersistenceManager.instance.GetSavedSceneName());
-=======
-        //SceneManager.LoadSceneAsync(DataPersistenceManager.instance.GetSavedSceneName());
-        StartLoadingSavedScene().Forget();
-    }
-
-    private async UniTask StartLoadingSavedScene()
-    {
-        var loadScene = SceneManager.LoadSceneAsync(DataPersistenceManager.instance.GetSavedSceneName());
-
-        while(!loadScene.isDone)
-        {
-            await UniTask.Yield();
-        }
->>>>>>> origin/main
     }
 
     public void OnClickExit()
     {
-<<<<<<< HEAD
         Application.Quit();
-=======
-# if UNITY_EDITOR
-        EditorApplication.isPlaying = false;
-#else
-        Application.Quit();
-#endif
->>>>>>> origin/main
     }
 
     private void DisableMenuButtons()
@@ -107,8 +75,4 @@ public class MainMenu : Menu
     {
         this.gameObject.SetActive(false);
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> origin/main
