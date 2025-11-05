@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 using Cysharp.Threading.Tasks;
->>>>>>> origin/main
 using System.Collections;
 using UnityEngine;
 
@@ -84,22 +81,14 @@ public class TeleportTrigger : MonoBehaviour
                 if (player.IsInteract1Triggered())
                 {
                     // Start the teleport coroutine
-<<<<<<< HEAD
-                    StartCoroutine(TeleportWithFade(other));
-=======
                     //StartCoroutine(TeleportWithFade(other));
                     TeleportWithFade(other).Forget();
->>>>>>> origin/main
                 }
             }
         }
     }
 
-<<<<<<< HEAD
-    private IEnumerator TeleportWithFade(Collider2D playerCollider)
-=======
     /*private IEnumerator TeleportWithFade(Collider2D playerCollider)
->>>>>>> origin/main
     {
         isTeleporting = true; // Set the flag to true to prevent multiple triggers
 
@@ -129,8 +118,6 @@ public class TeleportTrigger : MonoBehaviour
         }
 
         isTeleporting = false; // Reset the flag after teleportation is complete
-<<<<<<< HEAD
-=======
     }*/
     private async UniTask TeleportWithFade(Collider2D playerCollider)
     {
@@ -162,6 +149,5 @@ public class TeleportTrigger : MonoBehaviour
         }
 
         isTeleporting = false; // Reset the flag after teleportation is complete
->>>>>>> origin/main
     }
 }

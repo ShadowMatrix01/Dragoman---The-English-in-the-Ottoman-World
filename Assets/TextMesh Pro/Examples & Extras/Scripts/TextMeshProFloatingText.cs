@@ -1,9 +1,6 @@
 using UnityEngine;
 using System.Collections;
-<<<<<<< HEAD
-=======
 using Cysharp.Threading.Tasks;
->>>>>>> origin/main
 
 
 namespace TMPro.Examples
@@ -73,12 +70,8 @@ namespace TMPro.Examples
                 m_textMeshPro.text = string.Empty;
                 m_textMeshPro.isTextObjectScaleStatic = IsTextObjectScaleStatic;
 
-<<<<<<< HEAD
-                StartCoroutine(DisplayTextMeshProFloatingText());
-=======
                 //StartCoroutine(DisplayTextMeshProFloatingText());
                 DisplayTextMeshProFloatingText().Forget();
->>>>>>> origin/main
             }
             else if (SpawnType == 1)
             {
@@ -94,12 +87,8 @@ namespace TMPro.Examples
                 m_textMesh.anchor = TextAnchor.LowerCenter;
                 m_textMesh.fontSize = 24;
 
-<<<<<<< HEAD
-                StartCoroutine(DisplayTextMeshFloatingText());
-=======
                 //StartCoroutine(DisplayTextMeshFloatingText());
                 DisplayTextMeshFloatingText().Forget();
->>>>>>> origin/main
             }
             else if (SpawnType == 2)
             {
@@ -124,11 +113,7 @@ namespace TMPro.Examples
         //}
 
 
-<<<<<<< HEAD
-        public IEnumerator DisplayTextMeshProFloatingText()
-=======
         /*public IEnumerator DisplayTextMeshProFloatingText()
->>>>>>> origin/main
         {
             float CountDuration = 2.0f; // How long is the countdown alive.
             float starting_Count = Random.Range(5f, 20f); // At what number is the counter starting at.
@@ -181,12 +166,6 @@ namespace TMPro.Examples
             m_floatingText_Transform.position = start_pos;
 
             StartCoroutine(DisplayTextMeshProFloatingText());
-<<<<<<< HEAD
-        }
-
-
-        public IEnumerator DisplayTextMeshFloatingText()
-=======
         }*/
 
         public async UniTask DisplayTextMeshProFloatingText()
@@ -248,7 +227,6 @@ namespace TMPro.Examples
         }
 
         /*public IEnumerator DisplayTextMeshFloatingText()
->>>>>>> origin/main
         {
             float CountDuration = 2.0f; // How long is the countdown alive.
             float starting_Count = Random.Range(5f, 20f); // At what number is the counter starting at.
@@ -300,8 +278,6 @@ namespace TMPro.Examples
             m_floatingText_Transform.position = start_pos;
 
             StartCoroutine(DisplayTextMeshFloatingText());
-<<<<<<< HEAD
-=======
         }*/
         public async UniTask DisplayTextMeshFloatingText()
         {
@@ -358,7 +334,6 @@ namespace TMPro.Examples
 
             //StartCoroutine(DisplayTextMeshFloatingText());
             DisplayTextMeshFloatingText().Forget();
->>>>>>> origin/main
         }
     }
 }
