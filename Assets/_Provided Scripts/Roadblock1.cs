@@ -16,11 +16,7 @@ public class Roadblock1 : MonoBehaviour
     {
         int Roadblock1 = ((Ink.Runtime.IntValue)DialogueManager
  .GetInstance()
-<<<<<<< HEAD
- .GetVariableState("Roadblock_1")).value; //Quoation is the name of the inkle object from the inkle file.
-=======
  .GetVariableState("Roadblock_1")).value;
->>>>>>> origin/main
         if (Roadblock_1_Object.activeSelf)
         {
             if (Roadblock1 == 1)
