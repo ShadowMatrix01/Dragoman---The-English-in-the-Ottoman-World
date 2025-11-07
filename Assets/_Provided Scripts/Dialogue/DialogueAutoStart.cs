@@ -5,10 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using Ink.Runtime;
 using Unity.VisualScripting.Antlr3.Runtime;
-<<<<<<< HEAD
-=======
 using Cysharp.Threading.Tasks;
->>>>>>> origin/main
 
 public class DialogueAutoStart : MonoBehaviour
 {
@@ -16,18 +13,11 @@ public class DialogueAutoStart : MonoBehaviour
 
     private void Start()
     {
-<<<<<<< HEAD
-        StartCoroutine(StartDialogueAfterFrames(2));
-    }
-
-    private IEnumerator StartDialogueAfterFrames(int frames)
-=======
         //StartCoroutine(StartDialogueAfterFrames(2));
         StartDialogueAfterFrames(2).Forget();
     }
 
     /*private IEnumerator StartDialogueAfterFrames(int frames)
->>>>>>> origin/main
     {
         for (int i = 0; i < frames; i++)
         {
@@ -38,8 +28,6 @@ public class DialogueAutoStart : MonoBehaviour
         {
             DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
         }
-<<<<<<< HEAD
-=======
     }*/
     private async UniTask StartDialogueAfterFrames(int frames)
     {
@@ -52,6 +40,5 @@ public class DialogueAutoStart : MonoBehaviour
         {
             DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
         }
->>>>>>> origin/main
     }
 }

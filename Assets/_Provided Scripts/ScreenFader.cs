@@ -2,10 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-<<<<<<< HEAD
-=======
 using Cysharp.Threading.Tasks;
->>>>>>> origin/main
 
 public class ScreenFader : MonoBehaviour
 {
@@ -43,20 +40,12 @@ public class ScreenFader : MonoBehaviour
         // Trigger fade-in only after the scene has loaded, with a custom duration (e.g., 10f)
         if (!isFading)
         {
-<<<<<<< HEAD
-            StartCoroutine(FadeIn(5f));  // Custom duration on scene load
-        }
-    }
-
-    public IEnumerator FadeOut(float durationOverride = -1f)
-=======
             //StartCoroutine(FadeIn(5f));  // Custom duration on scene load
             FadeIn(5f).Forget();
         }
     }
 
     /*public IEnumerator FadeOut(float durationOverride = -1f)
->>>>>>> origin/main
     {
         if (isFading) yield break;
 
@@ -80,11 +69,6 @@ public class ScreenFader : MonoBehaviour
         color.a = 1f;
         fadeImage.color = color;
         isFading = false;
-<<<<<<< HEAD
-    }
-
-    public IEnumerator FadeIn(float durationOverride = -1f)
-=======
     }*/
 
     public async UniTask FadeOut(float durationOverride = -1f)
@@ -114,7 +98,6 @@ public class ScreenFader : MonoBehaviour
     }
 
     /*public IEnumerator FadeIn(float durationOverride = -1f)
->>>>>>> origin/main
     {
         if (isFading) yield break;
 
@@ -141,8 +124,6 @@ public class ScreenFader : MonoBehaviour
         isFading = false;
 
         Debug.Log("ScreenFader: Fade-in complete.");
-<<<<<<< HEAD
-=======
     }*/
     public async UniTask FadeIn(float durationOverride = -1f)
     {
@@ -171,6 +152,5 @@ public class ScreenFader : MonoBehaviour
         isFading = false;
 
         Debug.Log("ScreenFader: Fade-in complete.");
->>>>>>> origin/main
     }
 }
