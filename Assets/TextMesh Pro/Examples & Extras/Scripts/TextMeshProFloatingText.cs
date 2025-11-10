@@ -166,6 +166,12 @@ namespace TMPro.Examples
             m_floatingText_Transform.position = start_pos;
 
             StartCoroutine(DisplayTextMeshProFloatingText());
+<<<<<<< HEAD
+        }
+
+
+        public IEnumerator DisplayTextMeshFloatingText()
+=======
         }*/
 
         public async UniTask DisplayTextMeshProFloatingText()
@@ -227,6 +233,7 @@ namespace TMPro.Examples
         }
 
         /*public IEnumerator DisplayTextMeshFloatingText()
+>>>>>>> origin/main
         {
             float CountDuration = 2.0f; // How long is the countdown alive.
             float starting_Count = Random.Range(5f, 20f); // At what number is the counter starting at.

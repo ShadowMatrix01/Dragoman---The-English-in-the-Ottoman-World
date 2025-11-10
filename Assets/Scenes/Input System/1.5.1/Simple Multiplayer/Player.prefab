@@ -12,7 +12,10 @@ GameObject:
   - component: {fileID: 5062027600983921550}
   - component: {fileID: 3984910858365239293}
   - component: {fileID: -4472597160913118672}
-  - component: {fileID: 2935281128520641892}
+<<<<<<< HEAD
+  - component: {fileID: -6304085462926080178}
+=======
+>>>>>>> origin/main
   m_Layer: 0
   m_Name: Player
   m_TagString: MainCamera
@@ -27,6 +30,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5062027600983921548}
+<<<<<<< HEAD
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -10}
@@ -34,6 +38,14 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+>>>>>>> origin/main
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &5062027600983921550
 Camera:
@@ -49,6 +61,7 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
+<<<<<<< HEAD
   m_Iso: 200
   m_ShutterSpeed: 0.005
   m_Aperture: 16
@@ -60,6 +73,11 @@ Camera:
   m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
+=======
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+>>>>>>> origin/main
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -98,18 +116,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   m_Actions: {fileID: -944628639613478452, guid: 9547001c61582724894ebf550c5b4921, type: 3}
+=======
+  m_Actions: {fileID: -944628639613478452, guid: 9547001c61582724894ebf550c5b4921,
+    type: 3}
+>>>>>>> origin/main
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< HEAD
   m_DeviceRegainedEvent:
     m_PersistentCalls:
       m_Calls: []
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
+=======
+    m_TypeName: UnityEngine.InputSystem.PlayerInput+DeviceLostEvent, Unity.InputSystem,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.InputSystem.PlayerInput+DeviceRegainedEvent, Unity.InputSystem,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.InputSystem.PlayerInput+ControlsChangedEvent, Unity.InputSystem,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+>>>>>>> origin/main
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
@@ -128,7 +166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4674e99101c1ae941b6a293e43c2af7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2935281128520641892
+<<<<<<< HEAD
+--- !u!114 &-6304085462926080178
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,3 +211,5 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+=======
+>>>>>>> origin/main

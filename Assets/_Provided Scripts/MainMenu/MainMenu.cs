@@ -20,7 +20,7 @@ public class MainMenu : Menu
     private void Start()
     {
         DisableButtonsDependingOnData();
-        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
 
