@@ -20,8 +20,8 @@ public class MainMenu : Menu
     private void Start()
     {
         DisableButtonsDependingOnData();
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     private void DisableButtonsDependingOnData()
@@ -68,7 +68,11 @@ public class MainMenu : Menu
 
     public void OnClickExit()
     {
+# if UNITY_EDITOR
+        EditorApplication.isPlaying = false;
+#else
         Application.Quit();
+#endif
     }
 
     private void DisableMenuButtons()
