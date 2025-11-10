@@ -67,5 +67,5 @@
         "*.sln": "*.csproj"
     },
     "GMSTGameFile.sln=======dotnet.defaultSolution": "CCSU_GMST100_GameProject.sln>>>>>>>origin/main",
-    "dotnet.defaultSolution": "GMSTGameFile.sln"
+    "dotnet.defaultSolution": "CCSU_GMST100_GameProject.sln"
 }
