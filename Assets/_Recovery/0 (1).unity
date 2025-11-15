@@ -832,7 +832,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c3870ca1c60472f4e8f0a1e113f8cdf6, type: 3}
+  m_Sprite: {fileID: 1086331387851373080, guid: 98a599fbedaa5de4ab0e52997c9f4319, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2344,7 +2344,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Game Name
+  m_text: 'Dragoman:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2b0b2e1ebb4b1b447964883a3853802c, type: 2}
   m_sharedMaterial: {fileID: 1435183277078059200, guid: 2b0b2e1ebb4b1b447964883a3853802c, type: 2}
@@ -2926,7 +2926,7 @@ MonoBehaviour:
   m_text: '
 
 
-    Subtitle'
+    The English in the Ottoman World'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2b0b2e1ebb4b1b447964883a3853802c, type: 2}
   m_sharedMaterial: {fileID: 1435183277078059200, guid: 2b0b2e1ebb4b1b447964883a3853802c, type: 2}
@@ -3982,7 +3982,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c3870ca1c60472f4e8f0a1e113f8cdf6, type: 3}
+  m_Sprite: {fileID: 1086331387851373080, guid: 98a599fbedaa5de4ab0e52997c9f4319, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5062,7 +5062,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c3870ca1c60472f4e8f0a1e113f8cdf6, type: 3}
+  m_Sprite: {fileID: 1086331387851373080, guid: 98a599fbedaa5de4ab0e52997c9f4319, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6354,7 +6354,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c3870ca1c60472f4e8f0a1e113f8cdf6, type: 3}
+  m_Sprite: {fileID: 1086331387851373080, guid: 98a599fbedaa5de4ab0e52997c9f4319, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
