@@ -132,7 +132,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""name"": ""Interact2"",
                     ""type"": ""Button"",
                     ""id"": ""15ad8a70-fad0-4004-8f71-e0f954c98ae5"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -141,7 +141,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""name"": ""Interact3"",
                     ""type"": ""Button"",
                     ""id"": ""0c5de74f-4c83-4d0d-a9a1-6b8ffd0f22f6"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -150,7 +150,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""name"": ""Interact4"",
                     ""type"": ""Button"",
                     ""id"": ""37d6bf9d-0074-4391-8725-c9aeb965cfb3"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -244,7 +244,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""91149a45-e28b-4b98-8db6-9460a5488710"",
-                    ""path"": ""<Keyboard>/p"",
+                    ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -265,8 +265,30 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""89c189b8-7470-4ee2-82a1-157fc0ef70dc"",
+                    ""path"": ""<Keyboard>/backspace"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""dc3cf3a5-54b1-47d8-9ad2-bf9cc578a744"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""10684d9d-71a8-4817-b81c-8d5c74c554ec"",
-                    ""path"": ""<Keyboard>/q"",
+                    ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -287,8 +309,30 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""750a2610-b994-4a7d-b119-ee91c003fe21"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a737c2a0-dfc2-41bc-bf8a-5ed9658e87f2"",
+                    ""path"": ""<Mouse>/middleButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""e67f9ed6-4078-46b3-a7fe-614b31b80469"",
-                    ""path"": ""<Keyboard>/f"",
+                    ""path"": ""<Keyboard>/n"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -300,6 +344,28 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""3648dbd3-547d-4ec5-a305-f7b44095e1ea"",
                     ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""edd61e0a-620f-4518-9962-c31b1399bb83"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b9816795-9595-423d-ada1-27bd1ebd2a94"",
+                    ""path"": ""<Mouse>/press"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
