@@ -1810,7 +1810,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 9047684772587425694, guid: ffc50e08e213b0f49a135a1ce81de0b8, type: 3}
+  m_Sprite: {fileID: 9047684772587425694, guid: 79b43a28d07f48c46b29e6fddcf3c967, type: 3}
   m_Color: {r: 0.8962264, g: 0.79580337, b: 0.59748423, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3530,7 +3530,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9d3eb1c5290edb642bdf7983f06bbf8e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9178227cf7cb4f246825394396ea454a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5237,8 +5237,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
