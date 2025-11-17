@@ -487,6 +487,17 @@
                 },
                 {
                     "name": "",
+                    "id": "d48c623e-3650-4db0-8683-612a59927c1c",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DialogueMove",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "72eaf62e-9be8-477e-ae66-7612b3ffa0b5",
                     "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
@@ -926,6 +937,17 @@
                 },
                 {
                     "name": "",
+                    "id": "ebd765d2-cf58-4e11-9708-cc54c692d083",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Submit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "eaf9e246-81e7-460d-b1dc-fea96fc303c8",
                     "path": "<Keyboard>/z",
                     "interactions": "",
@@ -1042,17 +1064,6 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "MiddleClick",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "819b6227-b590-40e4-aaed-e5e053c4a79e",
-                    "path": "<Mouse>/rightButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "RightClick",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
