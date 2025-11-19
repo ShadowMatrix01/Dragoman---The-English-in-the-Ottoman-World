@@ -63,7 +63,7 @@ public class ChangeSceneInk : MonoBehaviour
         if (screenFader != null)
         {
             //yield return screenFader.FadeOut(5f); // Override with 5 seconds
-            await screenFader.FadeOut(5f);
+            await screenFader.FadeOut(1000000000f);
         }
 
         // Save game data before changing scenes
