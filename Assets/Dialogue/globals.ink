@@ -4,8 +4,9 @@ VAR player_Health = 80
 //Player Changing Variables//
 
 
-//Main Music Script//
-VAR music = 0
+//Music Control//
+VAR music = 0 // the song that is played, starts at 0
+VAR playMusic = 1 // >=1: play music
 
 //Passages//
 VAR passage_1 = 0
