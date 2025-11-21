@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,12 +27,27 @@ public class MusicManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         int Music = ((Ink.Runtime.IntValue)DialogueManager
- .GetInstance()
- .GetVariableState("music")).value;
-        if (MainMusic.activeSelf)
+            .GetInstance()
+            .GetVariableState("music")).value;
+        int PlayMusic = ((Ink.Runtime.IntValue)DialogueManager
+            .GetInstance()
+            .GetVariableState("playMusic")).value;
+        
+        if (PlayMusic > 0)
         {
-            if (Music == 1)
+            if (Music == 0) 
+            {
+                MainMusic.SetActive(true);
+                BattleMusic.SetActive(false);
+                CoffeeMusic.SetActive(false);
+                DialogueMusic.SetActive(false);
+                MerchantMusic.SetActive(false);
+                JanissaryMusic.SetActive(false);
+                MaviMusic.SetActive(false);
+            }
+            else if (Music == 1)
             {
                 MainMusic.SetActive(false);
                 BattleMusic.SetActive(true);
@@ -78,7 +94,7 @@ public class MusicManager : MonoBehaviour
                 CoffeeMusic.SetActive(false);
                 DialogueMusic.SetActive(false);
                 MerchantMusic.SetActive(false);
-                JanissaryMusic.SetActive(true);
+                JanissaryMusic.SetActive(true); 
                 MaviMusic.SetActive(false);
             }
             else if (Music == 6)
@@ -91,40 +107,17 @@ public class MusicManager : MonoBehaviour
                 JanissaryMusic.SetActive(false);
                 MaviMusic.SetActive(true);
             }
-            else if (Music == 0)
-            {
-                //
-            };
         }
-        else if (!MainMusic.activeSelf)
+        else
         {
-            if (Music == 0)
-            {
-                MainMusic.SetActive(true);
-                BattleMusic.SetActive(false);
-                CoffeeMusic.SetActive(false);
-                DialogueMusic.SetActive(false);
-                MerchantMusic.SetActive(false);
-                JanissaryMusic.SetActive(false);
-                MaviMusic.SetActive(false);
-            }
-            else if (Music != 0)
-            {
-                //
-            };
-            if (!BattleMusic.activeSelf && !CoffeeMusic.activeSelf && !DialogueMusic.activeSelf && !MerchantMusic.activeSelf && !JanissaryMusic.activeSelf && !MaviMusic.activeSelf)
-            {
-                MainMusic.SetActive(true);
-                BattleMusic.SetActive(false);
-                CoffeeMusic.SetActive(false);
-                DialogueMusic.SetActive(false);
-                MerchantMusic.SetActive(false);
-                JanissaryMusic.SetActive(false);
-                MaviMusic.SetActive(false);
-                ((Ink.Runtime.IntValue)DialogueManager
- .GetInstance()
- .GetVariableState("music")).value = 0;
-            };
+            MainMusic.SetActive(false);
+            BattleMusic.SetActive(false);
+            CoffeeMusic.SetActive(false);
+            DialogueMusic.SetActive(false);
+            MerchantMusic.SetActive(false);
+            JanissaryMusic.SetActive(false);
+            MaviMusic.SetActive(false);
         }
+        
     }
 }
