@@ -5,8 +5,8 @@ VAR player_Health = 80
 
 
 //Music Control//
-VAR music = 0 // the song that is played, starts at 0
-VAR playMusic = 1 // >=1: play music
+VAR music = 3
+VAR playMusic = 10
 
 //Passages//
 VAR passage_1 = 0

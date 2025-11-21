@@ -1,12 +1,12 @@
 INCLUDE globals.ink
 
-~ music = 4
+~ playMusic = playMusic
+~ music = 0
 ->ArrivalatConstantinople
 ===ArrivalatConstantinople===
 # speaker:Narrator # portrait:portrait1 # layout:right
 <b>Narrator:</b> The sound of waves, seagulls cry above. The deck creeks beneath her boots. The wind of the <b>Bosphorus</b> carries the scent of salt and spice. The masts of the ship groan as <b>Elizabeth Lady Craven</b> gazes toward a city of domes and minarets.
 +[Continue]
-~ playMusic = 0
 ->ArrivalatConstantinople1
 +[Info about Elizabeth Lady Craven]
 ->CravenInfo
