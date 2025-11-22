@@ -4,8 +4,23 @@ VAR player_Health = 80
 //Player Changing Variables//
 
 
-//Main Music Script//
+//Main Sounds Script//
 VAR music = 0
+VAR seagulls = 0
+VAR waves = 0
+VAR wind = 0
+VAR ship_on_waves = 0
+VAR street_chatter = 0
+VAR prayer_call = 0
+VAR coffee_pour = 0
+VAR coffee_sipping = 0
+VAR door_knock = 0
+VAR pen_writing = 0
+VAR cheers = 0
+VAR footsteps = 0
+VAR lamp_light = 0
+VAR soundscape_temp = 0
+VAR lettersound = 0
 
 //Passages//
 VAR passage_1 = 0
