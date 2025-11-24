@@ -70,6 +70,11 @@ public class ChangeSceneInk : MonoBehaviour
         GameData gameData = new GameData();
         DialogueManager.GetInstance().SaveData(gameData);
 
-        SceneManager.LoadScene(sceneID);
+        var loadScene = SceneManager.LoadSceneAsync(sceneID);
+        while (!loadScene.isDone)
+        {
+            await UniTask.Yield();
+        }
+        //SceneManager.LoadScene(sceneID);
     }
 }
