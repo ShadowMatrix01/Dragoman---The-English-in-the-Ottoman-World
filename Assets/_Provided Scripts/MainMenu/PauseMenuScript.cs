@@ -5,20 +5,34 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 
+/*
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Utilities;
 
-public class PauseMenuScript : MonoBehaviour
+public class NewMonoScript : MonoBehaviour
 {
     public GameObject pauseMenu;
     public static bool isPaused;
+    
+    private PlayerControls playerControls;
 
     void Start()
     {
         pauseMenu.SetActive(false);
     }
 
+     private void Awake()
+    {
+
+        playerControls = new PlayerControls();
+
+    }
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape)) 
+        if (Input.GetKeyDown(KeyCode.M)) 
         {
             if (isPaused) 
             {
@@ -57,3 +71,4 @@ public class PauseMenuScript : MonoBehaviour
         Application.Quit();
     }
 }
+*/

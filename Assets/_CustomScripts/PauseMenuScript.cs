@@ -1,20 +1,34 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Utilities;
 
 public class NewMonoScript : MonoBehaviour
 {
     public GameObject pauseMenu;
     public static bool isPaused;
+    
+    private PlayerControls playerControls;
 
     void Start()
     {
         pauseMenu.SetActive(false);
     }
 
+    //  private void Awake()
+    // {
+
+    //     playerControls = new PlayerControls();
+
+    // }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.M)) 
         {
+
             if (isPaused) 
             {
                 ResumeGame();
@@ -23,14 +37,28 @@ public class NewMonoScript : MonoBehaviour
             {
                 PauseGame();
             }
+        }
+
+        if (isPaused) {
+            if (Input.GetKeyDown(KeyCode.X)) {
+                GoToMainMenu();
+            }
+            else if (Input.GetKeyDown(KeyCode.Escape)) {
+                QuitGame();
+            }
+            else if (Input.GetKeyDown(KeyCode.L)) {
+                ResumeGame();
+            }
         }   
     }
     
     public void PauseGame() 
     {
+
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
+
     }
     
     public void ResumeGame() 
@@ -44,9 +72,10 @@ public class NewMonoScript : MonoBehaviour
     {
         Time.timeScale = 1f;
         isPaused = false;
-        SceneManager.LoadScene("Scene_MainMenu");
-    }
+        SceneManager.LoadScene("MainMenu");
+        }
     
+
     public void QuitGame() 
     {
         Application.Quit();

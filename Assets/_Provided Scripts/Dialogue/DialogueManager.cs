@@ -21,6 +21,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private TextMeshProUGUI displayNameText;
     [SerializeField] private Animator portraitAnimator;
+    
     private Animator layoutAnimator;
 
     [Header("Choices UI")]
@@ -28,6 +29,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
     private TextMeshProUGUI[] choicesText;
 
     private PlayerControls playerControls;
+    private static bool isPaused = false;
 
     private Story currentStory;
     public bool dialogueIsPlaying { get; private set; }
@@ -97,11 +99,22 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
 
     private void Update()
     {
+        
+        if (isPaused) {
+            playerControls.Travel.Disable();
+            playerControls.UI.Enable();
+            return;
+        }
+        else {
+            playerControls.UI.Disable();
+            playerControls.Travel.Enable();
+        }
         // return right away if dialogue isn't playing
         if (!dialogueIsPlaying)
         {
             return;
         }
+
 
         // handle continuing to the next line in the dialogue when submit is pressed
         // NOTE: The 'currentStory.currentChoiecs.Count == 0' 
