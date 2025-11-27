@@ -17,7 +17,7 @@ public class ChangeSceneInk : MonoBehaviour
 
     private void Start()
     {
-        screenFader = FindObjectOfType<ScreenFader>(); // Find the ScreenFader in the scene
+        screenFader = FindFirstObjectByType<ScreenFader>(); // Find the ScreenFader in the scene
         if (screenFader == null)
         {
             Debug.LogError("ChangeSceneInk: No ScreenFader found in scene!");
@@ -63,18 +63,23 @@ public class ChangeSceneInk : MonoBehaviour
         if (screenFader != null)
         {
             //yield return screenFader.FadeOut(5f); // Override with 5 seconds
-            await screenFader.FadeOut(1000000000f);
+            //await screenFader.FadeOut(1000000000f);
+            screenFader.FadeOut(3000f).Forget();
         }
 
         // Save game data before changing scenes
         GameData gameData = new GameData();
         DialogueManager.GetInstance().SaveData(gameData);
 
+        await LoadNewScene(sceneID);
+        //SceneManager.LoadScene(sceneID);
+    }
+    private async UniTask LoadNewScene(int sceneID)
+    {
         var loadScene = SceneManager.LoadSceneAsync(sceneID);
         while (!loadScene.isDone)
         {
             await UniTask.Yield();
         }
-        //SceneManager.LoadScene(sceneID);
     }
 }

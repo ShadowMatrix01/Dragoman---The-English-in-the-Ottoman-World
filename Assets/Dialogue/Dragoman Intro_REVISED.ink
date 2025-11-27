@@ -12,7 +12,7 @@ Each choice will shape your journey and change how everything unfolds.
 The story is waiting to be written,
 And it is your job to bring it to life. 
 +[Chapter 1]
-~scenecharge = 6
+~scenechange = 6
 ->DONE
 +[Chapter 2]
 ~scenechange = 2

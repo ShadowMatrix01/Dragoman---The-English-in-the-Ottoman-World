@@ -1,3 +1,4 @@
+using Cysharp.Threading.Tasks;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -88,13 +89,26 @@ public class SaveSlotsMenu : Menu
         Debug.Log($"Loading scene: {sceneName} (Build Index: {sceneBuildIndex})");
 
         // load the scene asynchronously
-        SceneManager.LoadSceneAsync(sceneName);
+        //SceneManager.LoadSceneAsync(sceneName);
+        LoadNewScene(sceneName).Forget();
     }
 
     private void SaveGameAndLoadNewGame()
     {
         DataPersistenceManager.instance.SaveGame();
-        SceneManager.LoadSceneAsync("Intro");
+        //SceneManager.LoadSceneAsync("Intro");
+        //TODO: Change back to Intro
+        LoadNewScene("Chapter 1").Forget();
+    }
+
+    private async UniTask LoadNewScene(string sceneName)
+    {
+        var loadScene = SceneManager.LoadSceneAsync(sceneName);
+
+        while(!loadScene.isDone)
+        {
+            await UniTask.Yield();
+        }
     }
 
     public void OnClearClicked(SaveSlot saveSlot)
