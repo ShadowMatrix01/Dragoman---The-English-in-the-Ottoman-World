@@ -3112,8 +3112,8 @@ Transform:
   m_GameObject: {fileID: 871345160}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1207, y: 0.6171, z: 0}
-  m_LocalScale: {x: 19.776587, y: 13.315104, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 0.77, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 519687692}
@@ -3165,7 +3165,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -4101527949616789312, guid: 52ae33b9ec860914dbea21b12b2b4c44, type: 3}
   m_Color: {r: 0.49685526, g: 0.43904504, b: 0.43904504, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4764,7 +4764,7 @@ Transform:
   m_GameObject: {fileID: 1803603403}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.67, y: -4.09, z: 0}
+  m_LocalPosition: {x: -4, y: -4.9, z: 0}
   m_LocalScale: {x: 0.6873, y: 0.6614, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5085,7 +5085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c80813b86ba2334589ea5a18e1e8683, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inkJSON: {fileID: 4900000, guid: b25352d31ec6f1549976bc413f1d399c, type: 3}
+  inkJSON: {fileID: 4900000, guid: 686b56bb654cad047bf5e739c14f5479, type: 3}
 --- !u!4 &1910476520
 Transform:
   m_ObjectHideFlags: 0
@@ -5632,7 +5632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typingSpeed: 0.01
-  loadGlobalsJSON: {fileID: 4900000, guid: 4889a529727bb084aa3584d6214bfe10, type: 3}
+  loadGlobalsJSON: {fileID: 4900000, guid: 4f20971c8a6de5c4e904bd1a48714c08, type: 3}
   dialoguePanel: {fileID: 984519158}
   continueIcon: {fileID: 1883478183}
   dialogueText: {fileID: 2076099377}

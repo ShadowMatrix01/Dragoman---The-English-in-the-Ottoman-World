@@ -21,7 +21,10 @@ VAR footsteps = 0
 VAR lamp_light = 0
 VAR soundscape_temp = 0
 VAR lettersound = 0
-
+VAR letter = 0
+VAR manlaugh = 0
+VAR walkingwoodfloor = 0
+VAR shipwind = 0
 //Passages//
 VAR passage_1 = 0
 VAR passage_2 = 0

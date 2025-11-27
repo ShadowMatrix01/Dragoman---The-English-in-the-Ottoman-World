@@ -2,7 +2,7 @@ INCLUDE globals.ink
 ->Intro
 ===Intro===
 # speaker:Narrator # portrait:portrait1 #layout:right
-~soundscape_temp = 1
+~music = 1
 The year is 1718. You are Lady Mary Wortley Montague, and your travels as the wife of the British ambassador to the Ottomans have brought you to the Ottoman capital in Constantinople. Your temperory home in the Pera district of the city provides you with a grand view of the bay of the Golden Horn and the Ottoman imperial palace directly across the water from your balcony. 
 You spend the quite hours of your day writing letters back home to your circle of friends back in England - which will be eventually be published as 'The Turkish Embassy Letters' upon your return to England some years later.
 You decide to write a letter to your friend back in England, Caroline of Ansbach - the current Princess of Wales. What story from your travels should you write to her about?
@@ -11,8 +11,9 @@ You decide to write a letter to your friend back in England, Caroline of Ansbach
 +[The view from your balcony]->Poem1
 ===Pox1===
 # speaker:Lady Mary # portrait:portrait15 # layout:left
-~lettersound = 1
+~letter = 1
 To the Princess of Wales...
+~letter = 0
 Pera of Constantinople, March 10, 1718
 I have now, Madam, finished a journey that has not been undertaken by any Christian, since the time of the Greek Emperoros; and I shall not regret all the fatigues I have suffered in it, if it gives me an opportunity of amusing your royal highness by an account of places utterly unknown amongst us...
 I wish to write to you of how small pox in the these lands has been made completely harmless when it proves to be so fatal in England...
@@ -77,8 +78,9 @@ I have now read your letter, Lady Mary, and I am sorry that I have taken so long
 ->DONE
 ===Women1===
 # speaker:Lady Mary # portrait:portrait15 # layout:left
-~lettersound = 1
+~letter = 1
 To the Princess of Wales...
+~letter = 0
 Pera of Constantinople, April 1, 1718
 I am now into a new world, where every thing I see, appears to me a change of scene; and I write to your ladyship with some content of mind, hoping, at least, that you will find the charm of novelty in my letters, and no longer reproach me, that I tell you nothing extraordinary...
 +[Discuss Afife Kadın]->Women2
@@ -105,6 +107,24 @@ To Lady Mary Wortley Montague...
 London, August 1718
 I have now read your letter, Lady Mary, and I am sorry that I have taken so long to respond. Thank you for telling me of the tale of Afife Kadın, her sorrow for the late Sultan Mustafa is intriguing to me...
 +[End Chapter]
+~music = 0
+~seagulls = 0
+~waves = 0
+~wind = 0
+~ship_on_waves = 0
+~street_chatter = 0
+~prayer_call = 0
+~coffee_pour = 0
+~coffee_sipping = 0
+~door_knock = 0
+~pen_writing = 0
+~cheers = 0
+~footsteps = 0
+~lamp_light = 0
+~letter = 0
+~manlaugh = 0
+~walkingwoodfloor = 0
+~shipwind = 0
 ~scenechange = 5
 ->DONE
 ===Women3===
@@ -129,12 +149,31 @@ I have now read your letter, Lady Mary, and I am sorry that I have taken so long
 Thank you for telling me of the status of women in the Ottoman Empire, it is curious to hear that those women appear to have more respect compared to what we experience here.
 However, it is similarly facinating to hear that our cultures are not as different as others would make it out to be. Please stay safe on your return voyage to England...
 +[End Chapter]
+~music = 0
+~seagulls = 0
+~waves = 0
+~wind = 0
+~ship_on_waves = 0
+~street_chatter = 0
+~prayer_call = 0
+~coffee_pour = 0
+~coffee_sipping = 0
+~door_knock = 0
+~pen_writing = 0
+~cheers = 0
+~footsteps = 0
+~lamp_light = 0
+~letter = 0
+~manlaugh = 0
+~walkingwoodfloor = 0
+~shipwind = 0
 ~scenechange = 5
 ->DONE
 ===Poem1===
 # speaker:Lady Mary # portrait:portrait15 # layout:left
-~lettersound = 1
-To the Princess of Wales...
+~letter = 1
+To the Princess of Wales...\
+~letter = 0
 Pera of Constantinople, May 10, 1718
 I have not written to you, dear Madam, these many months - a great piece of self-denial. But I know not where to direct, or what part of the world you are in...I had rather ten of my letters be lost, than imagine I don't write; and I think it is hard fortune, if one in ten don't reach you.
 However, I am resolved to keep copies, as testimonies of my inclination to give you, to the utmost of my power, all the diverting part of my travels, while you are exempt from all the fatigues and inconceniencies.
@@ -195,6 +234,26 @@ London, August 1718
 I have now read your letter, Lady Mary, and I am sorry that I have taken so long to respond. 
 Your words make me feel as if I was there with you experiencing the grand capital of the Grand Signior (sultan), thank you for these illustrative words...I will keep them close...
 +[End Chapter]
+~music = 0
+~seagulls = 0
+~waves = 0
+~wind = 0
+~ship_on_waves = 0
+~street_chatter = 0
+~prayer_call = 0
+~coffee_pour = 0
+~coffee_sipping = 0
+~door_knock = 0
+~pen_writing = 0
+~cheers = 0
+~footsteps = 0
+~lamp_light = 0
+~letter = 0
+~manlaugh = 0
+~walkingwoodfloor = 0
+~shipwind = 0
+~scenechange = 5
+->DONE
 ===RestartChapter4===
 # speaker:Lady Mary # portrait:portrait15 # layout:left
 Instead of sending this letter, you decide to discard it and think again about your experiences. Perhaps there is a better one to tell of?
