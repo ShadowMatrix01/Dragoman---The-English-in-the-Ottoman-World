@@ -49,6 +49,11 @@ public class NewMonoScript : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.L)) {
                 ResumeGame();
             }
+        } 
+
+        if (Input.GetKeyDown(KeyCode.Escape)) 
+        {
+            Application.Quit();
         }   
     }
     
