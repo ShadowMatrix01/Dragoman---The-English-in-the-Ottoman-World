@@ -5085,7 +5085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c80813b86ba2334589ea5a18e1e8683, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inkJSON: {fileID: 4900000, guid: ecbbee36ffa361c448c826453badee02, type: 3}
+  inkJSON: {fileID: 4900000, guid: ad21194318d499c4db367f02ac6212e9, type: 3}
 --- !u!4 &1910476520
 Transform:
   m_ObjectHideFlags: 0
@@ -5632,7 +5632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typingSpeed: 0.01
-  loadGlobalsJSON: {fileID: 4900000, guid: 4889a529727bb084aa3584d6214bfe10, type: 3}
+  loadGlobalsJSON: {fileID: 4900000, guid: 4f20971c8a6de5c4e904bd1a48714c08, type: 3}
   dialoguePanel: {fileID: 984519158}
   continueIcon: {fileID: 1883478183}
   dialogueText: {fileID: 2076099377}

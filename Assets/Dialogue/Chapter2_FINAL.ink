@@ -219,7 +219,7 @@ Yusuf Reis (letter response):
 ~footsteps = 0
 ~lamp_light = 0
 ~letter = 0
-~scenechange = 3
+~scenechange = 7
 ->DONE
 ===PalaceInfo===
 # speaker:Narrator # portrait:portrait1 # layout:right

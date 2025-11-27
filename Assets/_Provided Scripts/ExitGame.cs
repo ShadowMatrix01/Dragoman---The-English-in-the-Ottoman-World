@@ -1,25 +1,20 @@
+using Ink.Parsed;
+using Ink.Runtime;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
-using Ink.Runtime;
-using Ink.Parsed;
 using UnityEngine.SceneManagement;
-
 
 public class ExitGame : MonoBehaviour
 {
     public void OnClickExit()
     {
-               
-                Application.Quit();
-
-
-      /* #if UNITY_EDITOR
-         EditorApplication.isPlaying = false;
-         #else 
+#if UNITY_EDITOR
+        EditorApplication.isPlaying = false;
+#else
         Application.Quit();
-        #endif 
-        */
+#endif
     }
 }
