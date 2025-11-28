@@ -98,7 +98,7 @@ public class SaveSlotsMenu : Menu
         DataPersistenceManager.instance.SaveGame();
         //SceneManager.LoadSceneAsync("Intro");
         //TODO: Change back to Intro
-        LoadNewScene("Chapter 1").Forget();
+        LoadNewScene("Intro").Forget();
     }
 
     private async UniTask LoadNewScene(string sceneName)
