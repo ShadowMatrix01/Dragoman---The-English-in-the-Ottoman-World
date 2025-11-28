@@ -16,7 +16,7 @@ VAR letter = 0
 VAR shipwind = 0
 VAR manlaugh = 0
 VAR walkingwoodfloor = 0
-//Main Music Script//
+//Main Music Script - 0 means none, 1-7 are different options//
 VAR music = 0
 //SceneChanging//
 VAR scenechange = 0
