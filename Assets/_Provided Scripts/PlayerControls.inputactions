@@ -996,7 +996,7 @@
                     "path": "<Keyboard>/enter",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";M&K",
                     "action": "Submit",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -1007,7 +1007,7 @@
                     "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";M&K",
                     "action": "Submit",
                     "isComposite": false,
                     "isPartOfComposite": false

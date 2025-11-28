@@ -36,9 +36,19 @@ public class VariableManager : MonoBehaviour
             int val = ((Ink.Runtime.IntValue)DialogueManager
                 .GetInstance()
                 .GetVariableState(pair.inkVariableName)).value;
-
+            
             // 1 = on, 0 = off
             bool shouldBeOn = val == 1;
+            
+            // Music obj should be on as long as var > 1
+            // MusicManager.cs then manages which song is played based on variable value
+            if (pair.inkVariableName == "music" && pair.soundObject.activeSelf != shouldBeOn)
+            {
+                if (val > 1)
+                {
+                    shouldBeOn = true;
+                }
+            }
 
             // Only update if necessary
             if (pair.soundObject.activeSelf != shouldBeOn)
