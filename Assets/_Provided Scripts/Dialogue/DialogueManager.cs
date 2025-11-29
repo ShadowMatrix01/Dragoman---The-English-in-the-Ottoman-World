@@ -191,7 +191,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
             if (nextLine.Equals("") && !currentStory.canContinue)
             {
                 //StartCoroutine(ExitDialogueMode());
-                ExitDialogueMode().Forget();
+                ExitDialogueMode().Forget(); 
             }
             //if not , will handle tags as normal
             else
