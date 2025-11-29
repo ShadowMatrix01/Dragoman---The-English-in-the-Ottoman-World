@@ -7,10 +7,10 @@ using Cysharp.Threading.Tasks;
 public class ChangeSceneInk : MonoBehaviour
 {
     [Header("Scene ID")]
-    [SerializeField] private int sceneID;
+    public int sceneID;
 
     [Header("Number Used in Ink Script")]
-    [SerializeField] private int scenechangenum;
+    public int scenechangenum;
 
     private bool sceneChanging = false;
     private ScreenFader screenFader;
@@ -64,7 +64,7 @@ public class ChangeSceneInk : MonoBehaviour
         {
             //yield return screenFader.FadeOut(5f); // Override with 5 seconds
             //await screenFader.FadeOut(1000000000f);
-            screenFader.FadeOut(3000f).Forget();
+            screenFader.FadeOut(5f).Forget();
         }
 
         // Save game data before changing scenes

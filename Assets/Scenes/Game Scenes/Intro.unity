@@ -1818,7 +1818,7 @@ SpriteRenderer:
   m_Size: {x: 11.23, y: 9.02}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &454956323
@@ -2863,8 +2863,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b58814a389a8b409c0776c8deaf050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneID: 2
-  scenechangenum: 2
+  sceneID: 1
+  scenechangenum: 1
 --- !u!1 &758927031
 GameObject:
   m_ObjectHideFlags: 0
