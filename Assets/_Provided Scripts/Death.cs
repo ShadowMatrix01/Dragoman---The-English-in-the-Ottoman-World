@@ -109,10 +109,13 @@ public class Death : MonoBehaviour
     public void OnContinueFromCheckpoint()
     {
         // Load the checkpoint data
-        CheckpointManager.Instance.LoadCheckpoint();
+        if(CheckpointManager.Instance != null)
+        {
+            CheckpointManager.Instance.LoadCheckpoint();
 
-        // Overwrite the current save file with the checkpoint data
-        CheckpointManager.Instance.OverwriteCurrentSaveWithCheckpoint();
+            // Overwrite the current save file with the checkpoint data
+            CheckpointManager.Instance.OverwriteCurrentSaveWithCheckpoint();
+        }
 
         // Deactivate the death popup
         deathPopup.SetActive(false);
