@@ -6,6 +6,8 @@ using Ink.Runtime;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using Cysharp.Threading.Tasks;
+using System.Threading;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour, IDataPersistence
 {
@@ -46,6 +48,10 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
    
     private DialogueVariables dialogueVariables;
 
+    private CancellationToken cts;
+
+    private bool _alreadyContinuingStory = false;
+
     private void Awake()
     {
         if (instance != null)
@@ -55,6 +61,8 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         instance = this;
 
         playerControls = new PlayerControls();
+
+        cts = new CancellationToken();
 
     }
     public void LoadData(GameData data)
@@ -122,7 +130,10 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         {
             if (playerControls.Travel.Interact1.triggered)
             {
-                ContinueStory();
+                if(!_alreadyContinuingStory)
+                {
+                    ContinueStory();
+                }
             }
         }
     }
@@ -184,7 +195,9 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
             // set text for the current dialogue line
             if (displayLineCoroutine != null)
             {
-                StopCoroutine(displayLineCoroutine);
+                //StopCoroutine(displayLineCoroutine);
+                //var cts = new CancellationTokenSource();
+                //cts.Cancel();
             }
             string nextLine = currentStory.Continue();
             //makes sure if next line is blank because of external fuctions or tags at the end, it wont display an empty box
@@ -198,7 +211,8 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
             {
                 // handle tags
                 HandleTags(currentStory.currentTags);
-                displayLineCoroutine = StartCoroutine(DisplayLine(nextLine));
+                //displayLineCoroutine = StartCoroutine(DisplayLine(nextLine));
+                DisplayLine(nextLine).Forget();
             }
         }
         else
@@ -208,7 +222,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         }
     }
 
-    private IEnumerator DisplayLine(string line)
+    /*private IEnumerator DisplayLine(string line)
     {
         // empty the dialogue text
         dialogueText.text = line;
@@ -245,6 +259,54 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
             {
                 dialogueText.maxVisibleCharacters++;
                 yield return new WaitForSeconds(typingSpeed);
+            }
+        }
+
+        // actions to take after the entire line has finished displaying
+        continueIcon.SetActive(true);
+        DisplayChoices();
+
+        canContinueToNextLine = true;
+    }*/
+
+    private async UniTask DisplayLine(string line)
+    {
+        // empty the dialogue text
+        dialogueText.text = line;
+        dialogueText.maxVisibleCharacters = 0;
+        // hide items while text is typing
+        continueIcon.SetActive(false);
+        HideChoices();
+
+        canContinueToNextLine = false;
+
+        bool isAddingRichTextTag = false;
+
+        // display each letter one at a time
+        foreach (char letter in line.ToCharArray())
+        {
+            // if the submit button is pressed, finish up displaying the line right away
+            if (playerControls.Travel.Interact4.triggered)
+            {
+                dialogueText.maxVisibleCharacters = line.Length;
+                break;
+            }
+
+            // check for rich text tag, if found, add it without waiting
+            if (letter == '<' || isAddingRichTextTag)
+            {
+                isAddingRichTextTag = true;
+                if (letter == '>')
+                {
+                    isAddingRichTextTag = false;
+                }
+            }
+            // if not rich text, add the next letter and wait a small time
+            else
+            {
+                dialogueText.maxVisibleCharacters++;
+                await UniTask.WaitForSeconds(typingSpeed, cancellationToken: cts);
+                cts.ThrowIfCancellationRequested();
             }
         }
 
@@ -358,11 +420,16 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         if (canContinueToNextLine)
         {
             currentStory.ChooseChoiceIndex(choiceIndex);
+            if(SceneManager.GetActiveScene().name == "Intro")
+            {
+                var getChangeSceneInkComponent = FindFirstObjectByType<ChangeSceneInk>();
+                getChangeSceneInkComponent.sceneID = choiceIndex + 1;
+                getChangeSceneInkComponent.scenechangenum = choiceIndex + 1;
+            }
             if (playerControls.Travel.Interact1.triggered)
             {
                 ContinueStory();
             }
-
         }
     }
 
