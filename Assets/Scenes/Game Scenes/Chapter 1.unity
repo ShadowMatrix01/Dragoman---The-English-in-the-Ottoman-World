@@ -3361,8 +3361,8 @@ Transform:
   m_GameObject: {fileID: 871345160}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0986, y: -0.0431, z: 0}
-  m_LocalScale: {x: 0.5971711, y: 0.46385968, z: 0.156}
+  m_LocalPosition: {x: 0.0422, y: -0.0124, z: 0}
+  m_LocalScale: {x: 0.7442789, y: 0.5973042, z: 0.19442922}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 519687692}
@@ -3414,7 +3414,7 @@ SpriteRenderer:
   m_SortingLayerID: 300455151
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6687345273966662893, guid: dd1a05e1aa7225b489b6efe3ccf8b26c, type: 3}
+  m_Sprite: {fileID: 3534230633882122528, guid: a515c48aa90484e4781ad77b52e4f439, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4337,7 +4337,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 163.00002, y: -10.199982}
+  m_AnchoredPosition: {x: 163, y: -10.199951}
   m_SizeDelta: {x: -242.80002, y: -244.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1190103174
@@ -4432,7 +4432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c80813b86ba2334589ea5a18e1e8683, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueAutoStart
-  inkJSON: {fileID: 4900000, guid: be1d34e3d9dce2f48a58cef210b51698, type: 3}
+  inkJSON: {fileID: 4900000, guid: 3f049a509cb4f0b49bfddb9641c4d5e8, type: 3}
 --- !u!4 &1259916191
 Transform:
   m_ObjectHideFlags: 0
@@ -7452,7 +7452,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1895782434
 RectTransform:
   m_ObjectHideFlags: 0

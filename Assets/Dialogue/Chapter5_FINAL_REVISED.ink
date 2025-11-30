@@ -2,14 +2,22 @@ INCLUDE globals.ink
 ->ArrivalatTunis
 ===ArrivalatTunis==
 # speaker:Narrator # portrait:portrait1 # layout:right
+~music = 1
+~seagulls = 1
+February 22nd 1796...
+Tunis and the Bardo Palace,<br>Ottoman North Africa
 <b>Narrator:</b> High walls surround the view. The castle floors are clean, sleek marble, cleaned frequently to uphold the royal standard.
- Castle workers rush around to ensure each errand is tended to while the King sits, head high, in his meeting room.
+ Attendants rush around to ensure each errand is tended to while the Bey of Tunis (Ottoman governor) sits, head high, in his meeting room in Bardo Palace.
+ An English ambassador arrives to the palace on orders to secure the release of captives captured by Tunisian pirates. However, these are no ordinary English captives that the English negotiate over...
+ These are captives from the French Island of Corsica which in the chaos of the French Revolution has found itself under temperory British control.
+ As the new claimed rulers of Corsica, England must play the part of protector and get rulers, like the Bey of Tunis, to recognize England's right to make the freedom Corsican captives their business...
+ The scene begins as the English envoy enters the Bardo palace...
 # speaker:Envoy # portrait:portrait17 # layout:left
 <b>Envoy:</b> We’ve been left standing long enough, Major. No greeting from the Vizier, no ceremony. This is hardly the treatment of an ambassador.
 # speaker:MajorMagra # portrait:portrait13 # layout:right
 <b>Major Magra:</b> Nor even of a naval captain, sir. It seems the Bey means to remind us whose court we’re in.
 # speaker:Envoy # portrait:portrait17 # layout:left
-<b>Envoy:</b> Even the Consuls of lesser nations are given chairs. This is deliberaty.
+<b>Envoy:</b> Even the Consuls of lesser nations are given chairs. This is deliberate.
 # speaker:MajorMagra # portrait:portrait13 # layout:right
 <b>Major Magra:</b> Possibly. And before any talk, he’ll expect me to kiss his hand. That’s the custom here.
 # speaker:Envoy # portrait:portrait17 # layout:left
@@ -19,11 +27,11 @@ INCLUDE globals.ink
 # speaker:Bey # portrait:portrait6 # layout:right
 <b>Bey:</b> Welcome. You bring messages from the King of England?
 # speaker:Envoy # portrait:portrait17 # layout:left
-<b>Envoy:</b> I do, Your Highness. I come on His Majesty’s behalf to speak of friendship and the release of Captain Padovani and his crew.
+<b>Envoy:</b> I do, Your Highness. I come on His Majesty’s behalf to speak of friendship and the release of Captain Padovani of Corsica and his crew.
 # speaker:Bey # portrait:portrait6 # layout:right
 <b>Bey:</b> Then your Consul must first kiss my hand, as is the custom.
-+[Lose your dignity and properly greet the Bey]->patha
-+[Avoid the greeting but risk angering the Bey]->pathb
++[Properly greet the Bey]->patha
++[Avoid the greeting]->pathb
 ===patha===
 # speaker:Bey # portrait:portrait6 # layout:right
 <b>Bey:</b> You stand before me in my hall, yet you refuse the custom shown by every envoy who enters this place
@@ -40,11 +48,11 @@ INCLUDE globals.ink
 # speaker:Bey # portrait:portrait6 # layout:right
 <b>Bey:</b> At last, the English learn respect. What business brings you to my castle.
 # speaker:Envoy # portrait:portrait17 # layout:left
-<b>Envoy:</b> The Maria Rosa was seized without cause. Her captain carried a British pass from the Viceroy of Corsica.
+<b>Envoy:</b> The Maria Rosa was seized without cause. Her captain carried a British pass from the British Viceroy of Corsica.
 # speaker:Bey # portrait:portrait6 # layout:right
-<b>Bey:</b> Corsicans are my enemies. Until I have a treaty from your King declaring that island his own, I will seize them when I can.
+<b>Bey:</b> Corsicans are my enemies, they rebelled against the French and thus they forfeited their protection under my treaty with the French. Until I have a treaty from your King declaring that island his own, I will seize them when I can.
 # speaker:Envoy # portrait:portrait17 # layout:left
-<b>Envoy:</b> But His Majesty accepted the Crown of Corsica two years past! Surely that alone
+<b>Envoy:</b> But I am here to tell you that Corsica is indeed part of my King's domain! Surely that alone is enough...
 # speaker:Bey # portrait:portrait6 # layout:right
 <b>Bey:</b> Words are not treaties. When the French took Corsica, they sent me one at once. Do the same, and I will act accordingly.
 # speaker:Envoy # portrait:portrait17 # layout:left
@@ -57,7 +65,7 @@ INCLUDE globals.ink
 <b>Envoy:</b> Then our business here is ended.
 # speaker:Bey # portrait:portrait6 # layout:right
 <b>Bey:</b> As you wish.
-+[You attempt to argue with the Bey]->choice
++[Argue with the Bey]->choice
 ===pathb===
 # speaker:Narrator # portrait:portrait1 # layout:right
 <b>Narrator:</b> In frustration, your contemplation and prioritization of your pride prevails. 
@@ -76,11 +84,11 @@ INCLUDE globals.ink
 # speaker:Bey # portrait:portrait6 # layout:right
 <b>Bey:</b> Now we may speak. What is your business?
 # speaker:Envoy # portrait:portrait17 # layout:left
-<b>Envoy:</b> The Maria Rosa was seized without cause. Her captain carried a British pass from the Viceroy of Corsica.
+<b>Envoy:</b> The Maria Rosa was seized without cause. Her captain carried a British pass from the British Viceroy of Corsica.
 # speaker:Bey # portrait:portrait6 # layout:right
-<b>Bey:</b> Corsicans are my enemies. Until I have a treaty from your King declaring that island his own, I will seize them when I can.
+<b>Bey:</b> Corsicans are my enemies, they rebelled against the French and thus they forfeited their protection under my treaty with the French. Until I have a treaty from your King declaring that island his own, I will seize them when I can.
 # speaker:Envoy # portrait:portrait17 # layout:left
-<b>Envoy:</b> But His Majesty accepted the Crown of Corsica two years past! Surely that alone
+<b>Envoy:</b> But I am here to tell you that Corsica is indeed part of my King's domain! Surely that alone is enough...
 # speaker:Bey # portrait:portrait6 # layout:right
 <b>Bey:</b> Words are not treaties. When the French took Corsica, they sent me one at once. Do the same, and I will act accordingly.
 # speaker:Envoy # portrait:portrait17 # layout:left
@@ -93,11 +101,14 @@ INCLUDE globals.ink
 <b>Envoy:</b> Then our business here is ended.
 # speaker:Bey # portrait:portrait6 # layout:right
 <b>Bey:</b> As you wish.
-+[You attempt to argue against the Bey]->choice
++[Argue with the Bey]->choice
 ===choice==
 # speaker:Narrator # portrait:portrait1 # layout:right
-<b>Narrator:</b> As your footsteps project on the marble floor in the silenced hall, the Bey speaks again. You end your approach to the doorway exiting the castle and begin to argue your stance.
+~footsteps = 1
+<b>Narrator:</b> As your footsteps project on the marble floor in the silenced hall, the Bey speaks again.
+You end your approach to the doorway exiting the castle and begin to argue your stance.
 # speaker:Bey # portrait:portrait6 # layout:right
+~footsteps = 0
 <b>Bey:</b> Until a treaty is made with your King, I shall treat the Corsicans as enemies. If your Consul failed to tell the Viceroy, that is his fault.
 # speaker:Envoy # portrait:portrait17 # layout:left
 <b>Envoy:</b> Your Highness, these are not my own words but my King’s instructions. The Corsicans are His Majesty’s subjects, and he is bound in honor to protect them.
@@ -112,9 +123,9 @@ b>Envoy:</b> They were taken on shore, not fishing as you claim.
 # speaker:Bey # portrait:portrait6 # layout:right
 <b>Bey:</b> It is all the same. I know the business well.
 # speaker:Envoy # portrait:portrait17 # layout:left
-<b>Envoy:</b> Then consider, Your Highness — when a Tunisian corsair was captured, the Viceroy of Corsica treated her crew with kindness and fed them at the King’s expense. I have the proof here.
+<b>Envoy:</b> Then consider, Your Highness — when a Tunisian corsair was captured, the Viceroy of Corsica treated her crew with kindness and fed them at the King of England's expense. I have the proof here.
 # speaker:Bey # portrait:portrait6 # layout:right
-<b>Bey:</b> That is nothing. We shall speak of it another time. Tell me — where is that crew now?
+<b>Bey:</b> That is nothing. We shall speak of it another time. Tell me — where is that Tunisian crew now?
 # speaker:Envoy # portrait:portrait17 # layout:left
 <b>Envoy:</b> On board my squadron, by my order.
 # speaker:Bey # portrait:portrait6 # layout:right
@@ -122,7 +133,7 @@ b>Envoy:</b> They were taken on shore, not fishing as you claim.
 # speaker:Envoy # portrait:portrait17 # layout:left
 <b>Envoy:</b> My instructions forbid it.
 # speaker:Bey # portrait:portrait6 # layout:right
-<b>Bey:</b> Are they slaves?
+<b>Bey:</b> Are they slaves? Do they not have freedom? Surely England would not kidnap my subjects when we are not at a state of war...?!
 # speaker:Envoy # portrait:portrait17 # layout:left
 <b>Envoy:</b> By no means.
 # speaker:Bey # portrait:portrait6 # layout:right
@@ -155,8 +166,8 @@ b>Envoy:</b> They were taken on shore, not fishing as you claim.
 <b>Envoy:</b> Undoubtedly not. They are treated with the utmost kindness.
 # speaker:Bey # portrait:portrait6 # layout:right
 <b>Bey: You have no right to detain them, it is contrary to treaty.
-+[Continue back and forth with the Bey]->patha1
-+[Cave into the Bey and his orders]->pathb1
++[Continue the back and forth]->patha1
++[Agree with the Bey]->pathb1
 ===patha1==
 # speaker:Envoy # portrait:portrait17 # layout:left
 <b>Envoy:</b> I do not offer your Excellency my own sentiments on this head. I only make known the will of my Sovereign, and as such, I only obey his orders.
@@ -197,8 +208,9 @@ b>Envoy:</b> They were taken on shore, not fishing as you claim.
 <b>Bey:</b> Your instructions can have nothing to do with withholding my subjects since you keep declaring they are not slaves.
 # speaker:Narrator # portrait:portrait1 # layout:right
 <b>You leave the castle frustrated, planning to return and talk the next day.</b>
-+[Go to meet again with the Bey in the morning]->patha2
-+[Visit with the Vizier before meeting with the Bey]->pathb2
+Who should you decide to meet first in the morning? Talk directly with the Bey or meet the vizier first?
++[Meet the Bey]->patha2
++[Meet the Vizier]->pathb2
 ===patha2==
 # speaker:Narrator # portrait:portrait1 # layout:right
 <b>Narrator:</b> Upon entry to the Bey’s chamber, hostility fills the air. Endless arguing has caused all in the audience to anticipate the outcome of yet another back and forth conversation.
@@ -232,7 +244,7 @@ b>Envoy:</b> They were taken on shore, not fishing as you claim.
 <b>Bey:</b> It is too late in the day for further business, we can begin our negotiation in the morning
 # speaker:Narrator # portrait:portrait1 # layout:right
 <b>Narrator:</b> You step out of the castle, officially over arguing with the Bey. 
-+[You decide tomorrow will be the final conversation about the matter.]->end
++[Continue to Tomorrow]->end
 ===end==
 # speaker:Envoy # portrait:portrait17 # layout:left
 <b>Envoy:</b> I am here to formally request the release of our British subjects.
@@ -252,7 +264,25 @@ b>Envoy:</b> They were taken on shore, not fishing as you claim.
 <b>Narrator:</b> The endless negotiations have concluded. A battle of pride and firm opinions stretched decisions for days on end. A treaty is demanded with royal ink, and respect is expected on your side.
  Negotiations are over, but the treaty awaits being written. 
  +[End Chapter]
-~scenechange = 6
+~music = 0
+~seagulls = 0
+~waves = 0
+~wind = 0
+~ship_on_waves = 0
+~street_chatter = 0
+~prayer_call = 0
+~coffee_pour = 0
+~coffee_sipping = 0
+~door_knock = 0
+~pen_writing = 0
+~cheers = 0
+~footsteps = 0
+~lamp_light = 0
+~letter = 0
+~manlaugh = 0
+~walkingwoodfloor = 0
+~shipwind = 0
+~scenechange = 7
 ->DONE
 ===pathb1==
 # speaker:Envoy # portrait:portrait17 # layout:left
@@ -297,10 +327,9 @@ However, I have already told your Excellency the true reason that my instruction
 <b>Bey:</b> Then we shall conclude this tomorrow with your answer given.
 # speaker:Narrator # portrait:portrait1 # layout:right
 <b>You leave the castle frustrated, planning to return and talk the next day.</b>
-+[Go to meet again with the Bey in the morning]
-->patha2
-+[Visit with the Vizier before meeting with the Bey]
-->pathb2
+Who should you decide to meet first in the morning? Talk directly with the Bey or meet the vizier first?
++[Meet the Bey]->patha2
++[Meet the Vizier]->pathb2
 ===pathb2==
 # speaker:Envoy # portrait:portrait17 # layout:left
 <b>Envoy:</b> Thank you for meeting with me, I wanted to discuss the Bey.
@@ -318,7 +347,10 @@ However, I have already told your Excellency the true reason that my instruction
 <b>Envoy:</b> Thank you, I must go see him now. Good day to you
 # speaker:Vizier # portrait:portrait8 # layout:right
 <b>Vizier:</b> And to you as well.
-+[Feeling deserving of more respect you make your way to find the Bey and begin negotiations] # where does this button lead
+# speaker:Narrator # portrait:portrait1 # layout:right
+Feeling deserving of more respect you make your way to find the Bey and begin negotiations!
++[Continue to the Bey]->pathb3
+===pathb3===
 # speaker:Envoy # portrait:portrait17 # layout:left
 <b>Envoy:</b> I am here to formally request the release of our British subjects.
 # speaker:Bey # portrait:portrait6 # layout:right
@@ -335,4 +367,5 @@ However, I have already told your Excellency the true reason that my instruction
 <b>Envoy:</b> We will accept the treaty if you will treat me as is customary, and as you have already done for the Algiers.
 # speaker:Narrator # portrait:portrait1 # layout:right
 <b>Narrator:</b> The endless negotiations have concluded. A battle of pride and firm opinions stretched decisions for days on end.
-A treaty is demanded with royal ink, and respect is expected on your side. Negotiations are over, but the treaty awaits being written.->end
+A treaty is demanded with royal ink, and respect is expected on your side. Negotiations are over, but the treaty awaits being written.
++[Continue to Tomorrow]->end
