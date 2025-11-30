@@ -6,7 +6,8 @@ INCLUDE globals.ink
 ~waves = 1
 ~wind = 1
 # speaker:Narrator # portrait:portrait1 # layout:right
-<b>Narrator:</b> The sound of waves, seagulls cry above. The deck creeks beneath her boots. The wind of the <b>Bosphorus</b> carries the scent of salt and spice. The masts of the ship groan as <b>Elizabeth Lady Craven</b> gazes toward a city of domes and minarets...
+<b>Narrator:</b> The sound of waves, seagulls cry above. The deck creeks beneath her boots. The wind of the <b>Bosphorus</b> carries the scent of salt and spice.
+The masts of the ship groan as <b>Elizabeth Lady Craven</b> gazes toward a city of domes and minarets...
 +[Continue]->ArrivalatConstantinople1
 +[Info about Elizabeth Lady Craven]->CravenInfo
 +[Info about The Bosphorus]->BosphorusInfo
@@ -240,7 +241,8 @@ In the coffee houses of Istanbul, people of all classes and faiths gathered to s
 +[Go Back]->pathaaa
 ===CravenInfo===
 # speaker:Narrator # portrait:portrait1 # layout:right
-Lady Craven was an English writer, traveler, and noblewoman who was known for her wit and independence. She journeyed through Eastern Europe and the Ottoman Empire, recording her encounters in her writing called <i>A Journey Through the Crimea to Constantinople.</i>
+Lady Craven was an English writer, traveler, and noblewoman who was known for her wit and independence.
+She journeyed through Eastern Europe and the Ottoman Empire, recording her encounters in her writing called <i>A Journey Through the Crimea to Constantinople.</i>
 +[Go Back]->ArrivalatConstantinople
 ===BosphorusInfo===
 # speaker:Narrator # portrait:portrait1 # layout:right
@@ -264,7 +266,8 @@ Known for her charm and intellect, she hosted salons at the French Palais where 
 +[Go Back]->pathb
 ===PoliticsInfo===
 # speaker:Narrator # portrait:portrait1 # layout:right
-At this time the Ottoman Empire was ruled by <b>Sultan Abdulhamid I</b> and governed through the royal Divan (court), which included the elite of Ottoman society including royal woman, viziers, eunuchs, the Sheikhulislam (head of the Ottoman Uluma-Muslim religious elite), and members of the <b>Janissary Corps</b>.
+At this time the Ottoman Empire was ruled by <b>Sultan Abdulhamid I</b> and governed through the royal Divan (court),...
+Which included the elite of Ottoman society including royal woman, viziers, eunuchs, the Sheikhulislam (head of the Ottoman Uluma-Muslim religious elite), and members of the <b>Janissary Corps</b>.
 +[Go Back]->b1
 +[Info about Sultan Abdulhamid I]->SultanInfo
 +[Info about the Janissaries]->JanissariesInfo
@@ -289,5 +292,6 @@ To be unseen was not to be absent — it was another kind of presence.
 +[Go Back]->pathaa
 ===BathInfo===
 # speaker:Narrator # portrait:portrait1 # layout:right
-Women’s baths, or <i>hammams</i>, were central to social life in the Ottoman Empire. They gathered to wash, talk, and prepare elaborate beauty rituals. To visitors like Lady Craven, these spaces seemed indulgent—but for Ottoman women, they were a rare sanctuary of freedom and community.
+Women’s baths, or <i>hammams</i>, were central to social life in the Ottoman Empire. They gathered to wash, talk, and prepare elaborate beauty rituals....
+To visitors like Lady Craven, these spaces seemed indulgent—but for Ottoman women, they were a rare sanctuary of freedom and community.
 +[Go Back]->b2

@@ -3,11 +3,14 @@ INCLUDE globals.ink
 ->Arrival_at_Galata
 ===Arrival_at_Galata===
 # speaker:Narrator # portrait:portrait1 # layout:right
-<b>Narrator:</b> As you walk into the abandoned company office, you notice a dusty, old notebook laying on the desk. It looks as though it has not been touched in years, if not decades. You grab the book, making sure to not damage the cover. You gently open to the first page, <b>"Thomas Greene"</b> is scribed in ink. Enthralled by what could be inside you open to the first entry: <b>"Letters from Galata"</b>.
+<b>Narrator:</b> As you walk into the abandoned company office, you notice a dusty, old notebook laying on the desk. It looks as though it has not been touched in years, if not decades.
+You grab the book, making sure to not damage the cover. You gently open to the first page, <b>"Thomas Greene"</b> is scribed in ink.
+Enthralled by what could be inside you open to the first entry: <b>"Letters from Galata"</b>.
 ~shipwind = 0
 <b>Galata, Istanbul - May 1634</b>
 # speaker:Narrator # portrait:portrait1 # layout:right
-<b>Narrator:</b> The harbor of Galata hums with life. Masts creak against the wind, voices in Turkish, Greek, Italian, and English blend into a single, chaotic song. The scent of salt, wine, and roasted fish drifts between taverns and ships. From the deck of an English merchant vessel, <b>Thomas Greene</b>, factor of the Levant Company, surveys the Ottoman port.
+<b>Narrator:</b> The harbor of Galata hums with life. Masts creak against the wind, voices in Turkish, Greek, Italian, and English blend into a single, chaotic song.
+The scent of salt, wine, and roasted fish drifts between taverns and ships. From the deck of an English merchant vessel, <b>Thomas Greene</b>, factor of the Levant Company, surveys the Ottoman port.
 # speaker:ThomasGreene # portrait:portrait10 # layout:left
 <b>Thomas Greene:</b> “At last, Constantinople. Or near enough. Galata—the crown of confusion and commerce.”
 # speaker:Narrator # portrait:portrait1 # layout:right
