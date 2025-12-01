@@ -1425,7 +1425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.28235295, g: 0.40927634, b: 0.49019608, a: 0.392}
+  m_Color: {r: 0.28235295, g: 0.40927634, b: 0.49019608, a: 0.8117647}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2521,7 +2521,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808693420}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -4808,8 +4808,8 @@ Transform:
   m_GameObject: {fileID: 1490684700}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3192, y: 0.78, z: 26.130787}
-  m_LocalScale: {x: 22.700428, y: 16.904266, z: 1}
+  m_LocalPosition: {x: 0.0517, y: 0.0416, z: 26.130787}
+  m_LocalScale: {x: 0.5375031, y: 0.39352426, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 455347522}
@@ -4861,8 +4861,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.18998605, g: 0.1373363, b: 0.20125782, a: 1}
+  m_Sprite: {fileID: 6687345273966662893, guid: dd1a05e1aa7225b489b6efe3ccf8b26c, type: 3}
+  m_Color: {r: 0.51572317, g: 0.51572317, b: 0.51572317, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
