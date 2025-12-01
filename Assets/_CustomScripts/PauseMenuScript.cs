@@ -17,12 +17,12 @@ public class NewMonoScript : MonoBehaviour
         pauseMenu.SetActive(false);
     }
 
-    //  private void Awake()
-    // {
+      private void Awake()
+     {
 
-    //     playerControls = new PlayerControls();
+        playerControls = new PlayerControls();
 
-    // }
+     }
 
     void Update()
     {
@@ -46,7 +46,7 @@ public class NewMonoScript : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.Escape)) {
                 QuitGame();
             }
-            else if (Input.GetKeyDown(KeyCode.L)) {
+            else if (Input.GetKeyDown(KeyCode.R)) {
                 ResumeGame();
             }
         } 

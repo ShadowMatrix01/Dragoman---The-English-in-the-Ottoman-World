@@ -27,9 +27,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Game Scenes/Intro.unity
     guid: a68bc14099e9f2446b9365f862465a96
   - enabled: 1
+    path: Assets/Scenes/Game Scenes/Conclusion.unity
+    guid: 8acf555e0ce48f944a7525d9a702cd9a
+  - enabled: 1
     path: Assets/Scenes/Game Scenes/End.unity
     guid: a58654479b82493408cbb17ad85e5c82
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: d617b5537e0ad1a4da00148fd87e7849, type: 2}
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 790d35cb52b1cdc46a42021a98f299a2, type: 3}
   m_UseUCBPForAssetBundles: 0
