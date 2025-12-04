@@ -1,6 +1,7 @@
 INCLUDE globals.ink
 ->Conclusion
 ===Conclusion===
+~music = 1
 # speaker:Narrator # portrait:portrait1 # layout:right
 You have concluded your journey through <b>Dragoman: The English in the Ottoman World</b>...
 Across the five stories you have made your way through to reach the end  of this educational experience.
@@ -10,6 +11,7 @@ Check out the Lewis Walpole Library blog which includes historical context by th
 +[Credits]
 ->Credits
 +[End]
+~music = 0
 ~scenechange = 1
 ->DONE
 ===Credits===
@@ -64,5 +66,6 @@ Check out the Lewis Walpole Library blog which includes historical context by th
 +[Restart Credits]
 ->Credits
 +[End]
+~music = 0
 ~scenechange = 1
 ->DONE

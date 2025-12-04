@@ -1,6 +1,7 @@
 INCLUDE globals.ink
 ->Start
 ===Start===
+~music = 1
 # speaker:Narrator # portrait:portrait1 # layout:right
 Welcome to <b>Dragoman: The English in the Ottoman World</b>
 <u>Dragoman</u> is the term for the professional translators and interpreters from the Ottoman Empire era.
@@ -13,17 +14,22 @@ This game was produced by students in two courses in Fall 2025 at Central Connec
 GMST 100: Intro to Game Studies - for the game development portion of the project<br>HIST 402:The Ottomans: Rise of an Empire - for the historical research related to the project.
 Each story is independent and can be played separately.
 +[Chapter 1]
+~music = 0
 ~scenechange = 1
 ->DONE
 +[Chapter 2]
+~music = 0
 ~scenechange = 2
 ->DONE
 +[Chapter 3]
+~music = 0
 ~scenechange = 3
 ->DONE
 +[Chapter 4]
+~music = 0
 ~scenechange = 4
 ->DONE
 +[Chapter 5]
+~music = 0
 ~scenechange = 5
 ->DONE
