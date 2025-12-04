@@ -1587,7 +1587,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &219917417
 Transform:
   m_ObjectHideFlags: 0
@@ -1824,57 +1824,6 @@ RectTransform:
   m_AnchoredPosition: {x: 39.899994, y: 53.5}
   m_SizeDelta: {x: 100, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &297739078
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 297739079}
-  - component: {fileID: 297739080}
-  m_Layer: 0
-  m_Name: MusicManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &297739079
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 297739078}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.7099233, y: 2.5783842, z: 1699.5747}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1264368193}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &297739080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 297739078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81d974a69b021ff4fb84c96251589c08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MainMusic: {fileID: 49027655}
-  BattleMusic: {fileID: 617104796}
-  CoffeeMusic: {fileID: 1073768223}
-  DialogueMusic: {fileID: 219917416}
-  MerchantMusic: {fileID: 1988759819}
-  JanissaryMusic: {fileID: 626536069}
-  MaviMusic: {fileID: 1269877976}
 --- !u!1 &346916898
 GameObject:
   m_ObjectHideFlags: 0
@@ -3042,7 +2991,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &617104797
 Transform:
   m_ObjectHideFlags: 0
@@ -3300,7 +3249,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &626536070
 Transform:
   m_ObjectHideFlags: 0
@@ -4775,7 +4724,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1073768224
 Transform:
   m_ObjectHideFlags: 0
@@ -5791,7 +5740,6 @@ Transform:
   m_Children:
   - {fileID: 624995111}
   - {fileID: 25398463}
-  - {fileID: 297739079}
   - {fileID: 1388617375}
   - {fileID: 2002878828}
   - {fileID: 744426709}
@@ -5958,7 +5906,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1269877977
 Transform:
   m_ObjectHideFlags: 0
@@ -6490,7 +6438,7 @@ MonoBehaviour:
   - inkVariableName: lamp_light
     soundObject: {fileID: 949770357}
   - inkVariableName: music
-    soundObject: {fileID: 1388617374}
+    soundObject: {fileID: 49027655}
   - inkVariableName: letter
     soundObject: {fileID: 1071237685}
   - inkVariableName: manlaugh
@@ -8144,7 +8092,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1988759820
 Transform:
   m_ObjectHideFlags: 0
